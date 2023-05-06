@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:'Poppins',sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #a1c3ff;
+}
+img{
+    flex-basis: 45%;
+    height: 40vh;
+    margin:5vh auto;
+
+}
+h1,h2{
+    margin-bottom: 15px;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.navbar{
+    background-color: #3474e6;
+    color: #fff;
+    height: 60px;
+}
+.navbar .logo{
+    font-size: x-large;
+    font-weight: bold;
+}
+.navbar a{
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+.navbar .container
+{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar a:hover{
+    color: lightblue;
+
+}
+.navbar ul li{
+    margin-left: 20px;
+    list-style-type: none;
+}
+header{
+    background-color: #0151cc;
+    color: #fff;
+    min-height: 400px;
+
+}
+header h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+header .container{
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    
+}
+.boxes .container{
+    display: flex;
+    justify-content: space-between;
+}
+.boxes .container .box{
+    flex: 1;
+    background-color: #0a51cc;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0,0.6);
+    padding: 15px 20px;
+}
+
+@media(max-width:768px) {
+    .header .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .boxes .container{
+        display: block;
+        text-align: center;
+    }
+    .box{
+        text-align: left;
+    }
+    
+}
